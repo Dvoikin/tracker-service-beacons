@@ -1,0 +1,1 @@
+[{"id":"1","site_id":"1","udi":"000001","label":"TestBeacon1","center":{"type":"Point","coordinates":[0,0]},"radius":50},{"id":"2","site_id":"2","udi":"000002","label":"TestBeacon2","center":{"type":"Point","coordinates":[2,2]},"radius":70},{"id":"3","site_id":"3","udi":"000003","label":"TestBeacon3","center":{"type":"Point","coordinates":[10,10]},"radius":50}]

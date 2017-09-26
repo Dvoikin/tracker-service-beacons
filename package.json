@@ -1,0 +1,37 @@
+{
+  "name": "tracker-services-beacons-node",
+  "version": "1.0.0",
+  "description": "Beacon positioning microsevice",
+  "main": "./obj/src/index.js",
+  "typings": "./obj/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test"
+  },
+  "keywords": [
+    "iquipsys",
+    "tracker",
+    "beacons"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docker-compose": "^0.4.3",
+    "pip-services-aws-node": "^1.0.0",
+    "pip-services-commons-node": "^2.0.0",
+    "pip-services-container-node": "^2.0.0",
+    "pip-services-data-node": "^2.0.0",
+    "pip-services-net-node": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "@types/node": "*",
+    "@types/lodash": "*",
+    "@types/async": "*",
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "restify": "^4.3.0"
+  }
+}
