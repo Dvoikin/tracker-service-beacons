@@ -1,1 +1,1 @@
-"# tracker-service-beacons" 
+## Positioning of beacoms
