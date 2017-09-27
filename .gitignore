@@ -3,3 +3,5 @@
 /data/beacons.tets.json
 /data/beacons.json
 /config/config.yaml
+/.idea
+.gitignore
