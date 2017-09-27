@@ -169,7 +169,7 @@ suite('BeaconsLambdaFunction', () => {
             },
             (callback) => {
                 lambda.act({ role: 'beacons', cmd: 'calculate_position', site_id: '1', udis: ['000001'] },(err, position) => {
-                    assert.isNull(err);
+                    assert.isNull(err || null);
 
                    // assert.equal(position.coordinates[0], 0);
                    // assert.equal(position.coordinates[1], 0);
@@ -179,7 +179,7 @@ suite('BeaconsLambdaFunction', () => {
             },
             (callback) => {
                 lambda.act({ role: 'beacons', cmd: 'calculate_position', site_id: '1', udis: ['000001', '000002'] },(err, position) => {
-                    assert.isNull(err);
+                    assert.isNull(err || null);
 
                    // assert.equal(position.coordinates[0], 1);
                    // assert.equal(position.coordinates[1], 1);

@@ -1,0 +1,10 @@
+.git
+.vscode
+.gitignore
+.dockerignore
+doc
+docker-compose*.yml
+node_modules
+Dcokerfile*
+*.sh
+*.ps1

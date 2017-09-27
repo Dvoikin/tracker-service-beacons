@@ -1,0 +1,13 @@
+FROM pipdevs/ts-dev:2.5.2
+
+WORKDIR /app
+# copy project file
+COPY package.json .
+
+# install all node_modules , including 'devDeps'
+RUN npm install
+
+COPY . .
+
+#
+RUN tsc
