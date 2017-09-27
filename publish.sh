@@ -10,7 +10,7 @@ set -e
 set -o pipefail
 
 #git tag $TAG
-git push #--tags
+#git push #--tags
 
 export DOCKER_USER=dvoykin
 export DOCKER_PASS=ah0908bh
