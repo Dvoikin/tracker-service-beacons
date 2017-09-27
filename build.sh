@@ -2,7 +2,7 @@
 
 COMPONENT=$(grep -m1 name package.json | tr -d '\r' | awk -F: '{ print $2 }' | sed 's/[", ]//g')
 VERSION=$(grep -m1 version package.json | tr -d '\r' | awk -F: '{ print $2 }' | sed 's/[", ]//g')
-IMAGE="dvoykin/${COMPONENT}:${VERSION}-build"
+IMAGE="dvoykin/${COMPONENT}:${VERSION}-${BUILD_NUMBER-0}-build"
 CONTAINER="${COMPONENT}"
 
 set -e
