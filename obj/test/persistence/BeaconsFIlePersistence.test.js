@@ -24,4 +24,4 @@ suite('BeaconsFilePersistence', () => {
         fixture.testGetWithFilter(done);
     });
 });
-//# sourceMappingURL=BeaconsFIlePersistence.test.js.map
+//# sourceMappingURL=BeaconsFilePersistence.test.js.map
