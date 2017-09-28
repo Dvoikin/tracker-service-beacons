@@ -7,10 +7,10 @@ import { BeaconsPersistenceFixture } from './BeaconsPersistenceFixture';
 suite('BeaconsMongoDbPersistence', () => {
     let persistence: BeaconsMongoDbPersistence;
     let fixture: BeaconsPersistenceFixture;
-    let mongoUri = process.env['MONGO_URI'];
-    let mongoHost = process.env['MONGO_HOST'] || 'localhost';
-    let mongoPort = process.env['MONGO_PORT'] || '27017';
-    let mongoDatabase = process.env['MONGO_DB'] || 'test';
+    let mongoUri = process.env['MONGO_SERVICE_URI'];
+    let mongoHost = process.env['MONGO_SERVICE_HOST'] || 'localhost';
+    let mongoPort = process.env['MONGO_SERVICE_PORT'] || '27017';
+    let mongoDatabase = process.env['MONGO_SERVICE_DB'] || 'test';
     
     setup((done) => {
         persistence = new BeaconsMongoDbPersistence();

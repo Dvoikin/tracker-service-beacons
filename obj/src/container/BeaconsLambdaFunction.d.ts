@@ -4,4 +4,4 @@ export declare class BeaconsLambdaFunction extends CommandableLambdaFunction {
     constructor();
     getReferences(): IReferences;
 }
-export declare const handler: any;
+export declare const handler: (event: any, context: any) => void;
