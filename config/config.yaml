@@ -1,0 +1,18 @@
+---
+- descriptor: "pip-services-commons:logger:console:default:1.0"
+  level: trace
+
+- descriptor: "pip-services-commons:counters:log:default:1.0"
+  level: trace
+
+- descriptor: "tracker-services-beacons:persistence:file:default:1.0"
+  path: "./data/beacons.json"
+
+- descriptor: "tracker-services-beacons:controller:default:default:1.0"
+
+- descriptor: "tracker-services-beacons:service:http:default:1.0"
+  connection: 
+    uri: {{ MONGO_SERVICE_URI }}
+    host: {{ MONGO_SERVICE_HOST }}
+    port: {{ MONGO_SERVICE_PORT }}
+    database: {{ MONGO_SERVICE_DB }}
